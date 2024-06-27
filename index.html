@@ -74,24 +74,25 @@
                 <button class="btn bg-[#894189] border-none text-white rounded-full text-xl font-medium">
                     Life
                    <img src="images/Group 23.svg" alt="">
-                   <span>0</span>
+                   <span id="current-life">5</span>
                   </button>
                   <button class="btn bg-[#360490] border-none text-white rounded-full text-xl font-medium">
                     Score
                    <img src="images/monetization_on.svg" alt="">
-                   <span>0</span>
+                   <span id="current-score">0</span>
                   </button>
              </div>
         </div>
     </section>
     <!-- playground end -->
-    <section class="score min-h-screen  flex justify-center items-center hidden">
+    <section id="score" class=" min-h-screen  flex justify-center items-center hidden">
         <div class="font-poppins text-white text-center space-y-4 bg-[#FFFFFF33] p-12 rounded-2xl">
+            <h1 class="text-3xl">Game Over !!!</h1>
             <h1 class="text-6xl">
                 <span class="font-semibold">Score: </span>
-                <span class="font-medium"></span>
+                <span id="final-score" class="font-medium"></span>
             </h1>
-            <button class="btn btn-ghost bg-white text-2xl font-semibold text-black">Play Now</button>
+            <button onclick="playAgain()" class="btn btn-ghost bg-white text-2xl font-semibold text-black">Play Again</button>
             <p class="text-xl font-medium">Practice will make you Pro</p>
         </div>
     </section>
